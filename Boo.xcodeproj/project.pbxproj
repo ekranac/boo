@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		008763C21BE4FAD200947433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008763C11BE4FAD200947433 /* AppDelegate.swift */; };
-		008763C41BE4FAD200947433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008763C31BE4FAD200947433 /* ViewController.swift */; };
+		008763C41BE4FAD200947433 /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008763C31BE4FAD200947433 /* PlayController.swift */; };
 		008763C71BE4FAD200947433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008763C51BE4FAD200947433 /* Main.storyboard */; };
 		008763C91BE4FAD200947433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008763C81BE4FAD200947433 /* Assets.xcassets */; };
 		008763CC1BE4FAD200947433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008763CA1BE4FAD200947433 /* LaunchScreen.storyboard */; };
 		008763D71BE4FAD200947433 /* BooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008763D61BE4FAD200947433 /* BooTests.swift */; };
+		008763EA1BE5315800947433 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008763E91BE5315800947433 /* AVFoundation.framework */; };
+		008763EC1BE5366300947433 /* boo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 008763EB1BE5366300947433 /* boo.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,7 @@
 /* Begin PBXFileReference section */
 		008763BE1BE4FAD200947433 /* Boo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008763C11BE4FAD200947433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		008763C31BE4FAD200947433 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		008763C31BE4FAD200947433 /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
 		008763C61BE4FAD200947433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		008763C81BE4FAD200947433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		008763CB1BE4FAD200947433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		008763D21BE4FAD200947433 /* BooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		008763D61BE4FAD200947433 /* BooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooTests.swift; sourceTree = "<group>"; };
 		008763D81BE4FAD200947433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008763E91BE5315800947433 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		008763EB1BE5366300947433 /* boo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boo.mp3; path = ../../../Downloads/boo.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008763EA1BE5315800947433 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 		008763B51BE4FAD200947433 = {
 			isa = PBXGroup;
 			children = (
+				008763E91BE5315800947433 /* AVFoundation.framework */,
 				008763C01BE4FAD200947433 /* Boo */,
 				008763D51BE4FAD200947433 /* BooTests */,
 				008763BF1BE4FAD200947433 /* Products */,
@@ -77,8 +83,9 @@
 		008763C01BE4FAD200947433 /* Boo */ = {
 			isa = PBXGroup;
 			children = (
+				008763ED1BE53AC400947433 /* Audio */,
 				008763C11BE4FAD200947433 /* AppDelegate.swift */,
-				008763C31BE4FAD200947433 /* ViewController.swift */,
+				008763C31BE4FAD200947433 /* PlayController.swift */,
 				008763C51BE4FAD200947433 /* Main.storyboard */,
 				008763C81BE4FAD200947433 /* Assets.xcassets */,
 				008763CA1BE4FAD200947433 /* LaunchScreen.storyboard */,
@@ -94,6 +101,14 @@
 				008763D81BE4FAD200947433 /* Info.plist */,
 			);
 			path = BooTests;
+			sourceTree = "<group>";
+		};
+		008763ED1BE53AC400947433 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				008763EB1BE5366300947433 /* boo.mp3 */,
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				008763CC1BE4FAD200947433 /* LaunchScreen.storyboard in Resources */,
+				008763EC1BE5366300947433 /* boo.mp3 in Resources */,
 				008763C91BE4FAD200947433 /* Assets.xcassets in Resources */,
 				008763C71BE4FAD200947433 /* Main.storyboard in Resources */,
 			);
@@ -199,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				008763C41BE4FAD200947433 /* ViewController.swift in Sources */,
+				008763C41BE4FAD200947433 /* PlayController.swift in Sources */,
 				008763C21BE4FAD200947433 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Boo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ziga.Boo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -341,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Boo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ziga.Boo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +408,7 @@
 				008763DD1BE4FAD200947433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		008763DE1BE4FAD200947433 /* Build configuration list for PBXNativeTarget "BooTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +417,7 @@
 				008763E01BE4FAD200947433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
