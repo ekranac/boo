@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0017F3A81BED0FE20036349F /* boo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0017F3A71BED0FE20036349F /* boo.mp3 */; };
 		008763C21BE4FAD200947433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008763C11BE4FAD200947433 /* AppDelegate.swift */; };
 		008763C41BE4FAD200947433 /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008763C31BE4FAD200947433 /* PlayController.swift */; };
 		008763C71BE4FAD200947433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008763C51BE4FAD200947433 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		008763CC1BE4FAD200947433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008763CA1BE4FAD200947433 /* LaunchScreen.storyboard */; };
 		008763D71BE4FAD200947433 /* BooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008763D61BE4FAD200947433 /* BooTests.swift */; };
 		008763EA1BE5315800947433 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008763E91BE5315800947433 /* AVFoundation.framework */; };
-		008763EC1BE5366300947433 /* boo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 008763EB1BE5366300947433 /* boo.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0017F3A71BED0FE20036349F /* boo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boo.mp3; path = Audio/boo.mp3; sourceTree = "<group>"; };
 		008763BE1BE4FAD200947433 /* Boo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008763C11BE4FAD200947433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		008763C31BE4FAD200947433 /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		008763D61BE4FAD200947433 /* BooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooTests.swift; sourceTree = "<group>"; };
 		008763D81BE4FAD200947433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		008763E91BE5315800947433 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		008763EB1BE5366300947433 /* boo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = boo.mp3; path = ../../../Downloads/boo.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		008763ED1BE53AC400947433 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				008763EB1BE5366300947433 /* boo.mp3 */,
+				0017F3A71BED0FE20036349F /* boo.mp3 */,
 			);
 			name = Audio;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				008763CC1BE4FAD200947433 /* LaunchScreen.storyboard in Resources */,
-				008763EC1BE5366300947433 /* boo.mp3 in Resources */,
+				0017F3A81BED0FE20036349F /* boo.mp3 in Resources */,
 				008763C91BE4FAD200947433 /* Assets.xcassets in Resources */,
 				008763C71BE4FAD200947433 /* Main.storyboard in Resources */,
 			);
